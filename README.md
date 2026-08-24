@@ -14,7 +14,7 @@ The pipeline consists of two main parts:
 - **Bash / awk** for text file processing.
 - **CERN ROOT** (C++ framework) for data visualization and fitting.
 
-## 1. Running the Simulation
+## Running the Simulation
 Use the provided `inputPHSD` parameters and run the transport model in the background:
 
 ```bash
@@ -24,7 +24,7 @@ nohup ./phsd > simulation.log 2>&1 &
 
 This generates the primary output file, typically named `phsd.dat`.
 
-## 2. Shell/Awk Pre-Analysis
+## Shell/Awk Pre-Analysis
 
 Before diving into ROOT, we can extract basic multiplicity numbers directly from the `phsd.dat` file.
 
@@ -59,7 +59,7 @@ END {
 * N(Sigma0) = 9273 +- 96.3
 * N(eta0) = 26315 +- 162.2
 
-## 3. Kinematic Analysis with ROOT
+## Kinematic Analysis with ROOT
 
 The `analyze_phsd.cpp` macro parses the output file to generate the following kinematic representations:
 
