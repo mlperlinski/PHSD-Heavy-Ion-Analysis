@@ -74,7 +74,7 @@ $dN/dE_{kin} = N \cdot p \cdot E \cdot \exp(-E/T)$
 Launch ROOT to execute the analysis script:
 
 ```bash
-root -l -b -q analyze_phsd.cpp
+root -l -b analyze_phsd.cpp
 
 ```
 
